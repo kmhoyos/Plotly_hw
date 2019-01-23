@@ -18,9 +18,7 @@ function buildMetadata(sample) {
     
     // BONUS: Build the Gauge Chart
     // buildGauge(data.WFREQ);
-    
-    
-      
+        
     })
   }
   
@@ -34,9 +32,9 @@ function buildMetadata(sample) {
       // console.log(sampleData.sample_values);
 
     // @TODO: Build a Bubble Chart using the sample data
-      const otu_ids = sampleData.otu_ids;
-      const otu_labels = sampleData.otu_labels;
-      const sample_values = sampleData.sample_values;
+      var otu_ids = sampleData.otu_ids;
+      var otu_labels = sampleData.otu_labels;
+      var sample_values = sampleData.sample_values;
 
       //Building Bubble chart
       var bubbleData = [{
@@ -79,16 +77,7 @@ function buildMetadata(sample) {
       Plotly.plot('pie', pieData, pieLayout); 
 
     });
-  }
-  
-  
-  // const defaultURL = "/metadata/<sample>";
-  // d3.json(defaultURL).then(function (data) {
-  //   var data = [data];
-  //   var layout = { margin: { t: 30, b: 100 } };
-  //   Plotly.plot("bar", data, layout);
-  // });
-  
+  }  
 
 
 function init() {
